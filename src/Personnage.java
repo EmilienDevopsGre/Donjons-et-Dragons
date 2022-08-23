@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Personnage {
 
     // Attributs
@@ -26,6 +28,16 @@ public class Personnage {
         }
     }
     // Getters Setters
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+
+
+
+
+    /*
 
     public String getName() {
         return name;
@@ -66,7 +78,7 @@ public class Personnage {
     public void setDefensiveEquipment(DefensiveEquipment defensiveEquipment) {
         this.defensiveEquipment = defensiveEquipment;
     }
-
+*/
     // toString
 
     @Override
