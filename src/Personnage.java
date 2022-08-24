@@ -4,6 +4,7 @@ public class Personnage {
 
     // Attributs
     private String name;
+    private String type;
     private int life;
     private int force;
     private OffensiveEquipment offensiveEquipment;
@@ -12,8 +13,9 @@ public class Personnage {
 
     // Constructeur
     public Personnage(String type) {
-        if (type == "warrior") {
+        if (type.equals("warrior")) {
             this.name = "warrior";
+            this.type = "warrior";
             this.life = 10;
             this.force = 10;
             this.offensiveEquipment = new OffensiveEquipment("weapon", "épée");
@@ -21,6 +23,7 @@ public class Personnage {
         }
         else {
             this.name = "magician";
+            this.type = "magician";
             this.life = 6;
             this.force = 15;
             this.offensiveEquipment = new OffensiveEquipment("spell", "sort");
@@ -85,6 +88,7 @@ public class Personnage {
     public String toString() {
         return "Personnage{" +
                 "name='" + name + '\'' +
+                ", type=" + type +
                 ", life=" + life +
                 ", force=" + force +
                 ", offensiveEquipment=" + offensiveEquipment +

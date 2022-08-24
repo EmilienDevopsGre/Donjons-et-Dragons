@@ -1,11 +1,31 @@
+import javax.swing.text.Position;
+
 public class Main {
     public static void main(String[] args) {
         Menu menu = new Menu();
-        menu.createCharacter();
-        menu.displayCharacter();
-        menu.setCharacter();
-        menu.displayCharacter();
-        menu.startGame();
-        menu.exitProgram();
+        Personnage personnage = menu.createCharacter();
+        menu.displayCharacter(personnage);
+        menu.setCharacter(personnage);
+        menu.displayCharacter(personnage);
+        Game game = new Game(personnage);
+        game.playGame();
+
+
+
+
+
+
+
+
+
+
+
+
+//        menu.displayCharacter();
+//        menu.setCharacter();
+//        menu.displayCharacter();
+//        menu.startGame();
+//        menu.move();
+//        menu.exitProgram();
     }
 }
