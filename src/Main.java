@@ -9,23 +9,5 @@ public class Main {
         menu.displayCharacter(personnage);
         Game game = new Game(personnage);
         game.playGame();
-
-
-
-
-
-
-
-
-
-
-
-
-//        menu.displayCharacter();
-//        menu.setCharacter();
-//        menu.displayCharacter();
-//        menu.startGame();
-//        menu.move();
-//        menu.exitProgram();
     }
 }

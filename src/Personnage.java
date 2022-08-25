@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Personnage {
+public abstract class Personnage {
 
     // Attributs
     private String name;
@@ -37,51 +37,6 @@ public class Personnage {
     }
 
 
-
-
-
-    /*
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getLife() {
-        return life;
-    }
-
-    public void setLife(int life) {
-        this.life = life;
-    }
-
-    public int getForce() {
-        return force;
-    }
-
-    public void setForce(int force) {
-        this.force = force;
-    }
-
-    public OffensiveEquipment getOffensiveEquipment() {
-        return offensiveEquipment;
-    }
-
-    public void setOffensiveEquipment(OffensiveEquipment offensiveEquipment) {
-        this.offensiveEquipment = offensiveEquipment;
-    }
-
-    public DefensiveEquipment getDefensiveEquipment() {
-        return defensiveEquipment;
-    }
-
-    public void setDefensiveEquipment(DefensiveEquipment defensiveEquipment) {
-        this.defensiveEquipment = defensiveEquipment;
-    }
-*/
     // toString
 
     @Override

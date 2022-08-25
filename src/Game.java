@@ -32,7 +32,6 @@ public class Game {
 
     }
 
-
     public void playGame() {
 
         this.startGame();
@@ -50,11 +49,7 @@ public class Game {
         } else if (userInput.equals("E")) {
             System.exit(0);
         }
-//        if (this.position >= 64){
-//            isOver = true;
-//            System.out.println(position);
     }
-
 
     public void startGame() {
         isOver = false;
@@ -73,3 +68,5 @@ public class Game {
         return dice;
     }
 }
+
+//function reset

@@ -28,10 +28,9 @@ public class Menu {
         personnage.setName(name);
     }
 
-
     public void exitProgram() {
         String value = scanner.nextLine();
-        if (value == "exit") {
+        if (value.equals("exit")) {
             System.exit(0);
         }
     }
