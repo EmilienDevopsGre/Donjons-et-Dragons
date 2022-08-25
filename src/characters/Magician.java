@@ -1,3 +1,8 @@
+package characters;
+
+import characters.attack.Spell;
+import characters.defense.Potion;
+
 public class Magician extends Character {
     public Magician() {
         super("magician",
@@ -5,6 +10,7 @@ public class Magician extends Character {
                 6,
                 15,
                 new Spell(),
-                new DefensiveEquipment("potion", "philtre"));
+                new Potion()
+        );
     }
 }

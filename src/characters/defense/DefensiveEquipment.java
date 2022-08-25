@@ -1,3 +1,5 @@
+package characters.defense;
+
 public abstract class DefensiveEquipment {
     private String type;
     private int defenseLevel;
@@ -9,7 +11,7 @@ public abstract class DefensiveEquipment {
         this.name = name;
     }
 
-    //    public DefensiveEquipment(String type, String name) {
+    //    public characters.defense.DefensiveEquipment(String type, String name) {
 //        if (type == "shield") {
 //            this.defenseLevel = 3;
 //        }
@@ -22,7 +24,7 @@ public abstract class DefensiveEquipment {
 
     @Override
     public String toString() {
-        return "DefensiveEquipment{" +
+        return "characters.defense.DefensiveEquipment{" +
                 "type='" + type + '\'' +
                 ", defenseLevel=" + defenseLevel +
                 ", name='" + name + '\'' +

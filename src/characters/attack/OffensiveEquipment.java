@@ -1,9 +1,11 @@
+package characters.attack;
+
 public abstract class OffensiveEquipment {
     private String type;
     private int attackLevel;
     private String name;
 
-//    public abstract OffensiveEquipment(String type, String name) {
+//    public abstract characters.attack.OffensiveEquipment(String type, String name) {
 //        if (type == "weapon") {
 //            this.attackLevel = 5;
 //        }
@@ -23,7 +25,7 @@ public abstract class OffensiveEquipment {
 
     @Override
     public String toString() {
-        return "OffensiveEquipment{" +
+        return "characters.attack.OffensiveEquipment{" +
                 "type='" + type + '\'' +
                 ", attackLevel=" + attackLevel +
                 ", name='" + name + '\'' +

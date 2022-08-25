@@ -1,3 +1,7 @@
+import characters.Character;
+import characters.Magician;
+import characters.Warrior;
+
 import java.util.Scanner;
 
 public class Menu {

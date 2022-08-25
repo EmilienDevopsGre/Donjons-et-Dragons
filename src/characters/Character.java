@@ -1,3 +1,7 @@
+package characters;
+import characters.attack.OffensiveEquipment;
+import characters.defense.DefensiveEquipment;
+
 public abstract class Character {
 
     // Attributs
@@ -29,6 +33,20 @@ public abstract class Character {
         this.name = name;
     }
 
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setLife(int life) {
+        this.life = life;
+    }
+
+    public void setForce(int force) {
+        this.force = force;
+    }
+
+
+
 
 
     // toString
@@ -45,15 +63,5 @@ public abstract class Character {
                 '}';
     }
 
-    public void setType(String type) {
-        this.type = type;
-    }
 
-    public void setLife(int life) {
-        this.life = life;
-    }
-
-    public void setForce(int force) {
-        this.force = force;
-    }
 }
