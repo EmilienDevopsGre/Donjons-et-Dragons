@@ -14,8 +14,8 @@ public class Game {
 
     // --------------------
     // Constructeur
-    public Game(Character character) {
-        this.character = character;
+    public Game() {
+
     }
 
     public void nextTurn() {
@@ -34,7 +34,11 @@ public class Game {
     }
 
     public void playGame() {
-
+        Menu menu = new Menu();
+        Character character = menu.createCharacter();
+        menu.displayCharacter(character);
+        menu.setCharacter(character);
+        menu.displayCharacter(character);
         this.startGame();
         do {
             this.nextTurn();
