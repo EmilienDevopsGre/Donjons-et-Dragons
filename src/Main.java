@@ -1,13 +1,11 @@
-import javax.swing.text.Position;
-
 public class Main {
     public static void main(String[] args) {
         Menu menu = new Menu();
-        Personnage personnage = menu.createCharacter();
-        menu.displayCharacter(personnage);
-        menu.setCharacter(personnage);
-        menu.displayCharacter(personnage);
-        Game game = new Game(personnage);
+        Character character = menu.createCharacter();
+        menu.displayCharacter(character);
+        menu.setCharacter(character);
+        menu.displayCharacter(character);
+        Game game = new Game(character);
         game.playGame();
     }
 }

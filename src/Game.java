@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -6,15 +5,15 @@ public class Game {
 
     private Scanner scanner = new Scanner(System.in);
     // Attributs
-    Personnage personnage;
+    Character character;
     int position;
     boolean isOver = false;
 
 
     // --------------------
     // Constructeur
-    public Game(Personnage personnage) {
-        this.personnage = personnage;
+    public Game(Character character) {
+        this.character = character;
     }
 
     public void nextTurn() {

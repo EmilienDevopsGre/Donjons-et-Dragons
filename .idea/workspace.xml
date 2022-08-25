@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5609321-a3c9-4646-8ff0-a9b878c79621" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Magician.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Warrior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Potion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shield.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Spell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Weapon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DefensiveEquipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DefensiveEquipment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Magician.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Magician.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Personnage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Personnage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OffensiveEquipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OffensiveEquipment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Personnage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Warrior.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +98,17 @@
                   <entry key="Show.Git.Branches" value="true" />
                 </map>
               </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="heritage" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
             </State>
           </value>
         </entry>
@@ -103,7 +120,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>7</line>
+          <line>5</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>

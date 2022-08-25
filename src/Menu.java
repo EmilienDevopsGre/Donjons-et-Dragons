@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Random;
 
 public class Menu {
 
@@ -7,25 +6,29 @@ public class Menu {
 
     private String type = "";
 
-    public Personnage createCharacter() {
+    public Character createCharacter() {
         while ( !type.equals("warrior") && !type.equals("magician") ) {
             System.out.println("choisir votre personnage \n warrior \n magician");
             type = this.scanner.nextLine();
         }
-
-        return new Personnage(type);
+        if (type.equals("warrior")){
+            return new Warrior();
+        }
+        else {
+            return new Magician();
+        }
     }
 
-    public void displayCharacter(Personnage personnage) {
-        System.out.println(personnage);
+    public void displayCharacter(Character character) {
+        System.out.println(character);
     }
 
 
-    public void setCharacter(Personnage personnage) {
+    public void setCharacter(Character character) {
         Scanner newName = new Scanner(System.in);
         System.out.println("Entrer un nom pour votre personnage");
         String name = newName.nextLine();
-        personnage.setName(name);
+        character.setName(name);
     }
 
     public void exitProgram() {
