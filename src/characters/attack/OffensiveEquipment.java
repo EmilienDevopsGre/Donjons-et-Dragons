@@ -1,9 +1,9 @@
 package characters.attack;
 
 public abstract class OffensiveEquipment {
-    private String type;
-    private int attackLevel;
-    private String name;
+    protected String type;
+    protected int attackLevel;
+    protected String name;
 
 //    public abstract characters.attack.OffensiveEquipment(String type, String name) {
 //        if (type == "weapon") {

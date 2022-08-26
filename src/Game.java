@@ -7,9 +7,9 @@ public class Game {
 
     private Scanner scanner = new Scanner(System.in);
     // Attributs
-    Character character;
-    int position;
-    boolean isOver = false;
+//    Character character;
+    private int position;
+    private boolean isOver = false;
 
 
     // --------------------
@@ -18,7 +18,10 @@ public class Game {
 
     }
 
-    public void nextTurn() {
+    public void nextTurn() throws OutOfBoardException {
+
+
+
         if (this.position < 64) {
             System.out.println("Je joue un tour");
             System.out.println("Entrer R pour lancer le dé et avancer");
@@ -27,10 +30,14 @@ public class Game {
                 this.position = this.position + diceRoll();
             }
             System.out.println("votre position actuelle " + this.position + "/64");
-        } else {
-            this.isOver = true;
-        }
 
+        }
+        else {
+            this.isOver = true;
+            if (this.position > 64){
+                throw (new OutOfBoardException());
+            }
+        }
     }
 
     public void playGame() {
@@ -40,10 +47,14 @@ public class Game {
         menu.setCharacter(character);
         menu.displayCharacter(character);
         this.startGame();
-        do {
-            this.nextTurn();
-        } while (!this.isOver);
-        this.endGame();
+        try {
+            do {
+                this.nextTurn();
+            } while (!this.isOver);
+            this.endGame();
+        } catch(OutOfBoardException e) {
+            e.printStackTrace();
+        }
     }
 
     public void endGame() {

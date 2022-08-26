@@ -5,18 +5,17 @@ import characters.defense.DefensiveEquipment;
 public abstract class Character {
 
     // Attributs
-    private String name;
-    private String type;
-    private int life;
-    private int force;
-    private OffensiveEquipment offensiveEquipment;
-    private DefensiveEquipment defensiveEquipment;
-
+    protected String name;
+    protected String type;
+    protected int life;
+    protected int force;
+    protected OffensiveEquipment offensiveEquipment;
+    protected DefensiveEquipment defensiveEquipment;
 
     // Constructeur
 
-    public Character() {
-    }
+//    public Character() {
+//    }
 
     public Character(String name, String type, int life, int force, OffensiveEquipment offensiveEquipment, DefensiveEquipment defensiveEquipment) {
         this.name = name;
@@ -33,17 +32,17 @@ public abstract class Character {
         this.name = name;
     }
 
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public void setLife(int life) {
-        this.life = life;
-    }
-
-    public void setForce(int force) {
-        this.force = force;
-    }
+//    public void setType(String type) {
+//        this.type = type;
+//    }
+//
+//    public void setLife(int life) {
+//        this.life = life;
+//    }
+//
+//    public void setForce(int force) {
+//        this.force = force;
+//    }
 
 
 

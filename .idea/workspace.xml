@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5609321-a3c9-4646-8ff0-a9b878c79621" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/OutOfBoardException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/characters/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/characters/attack/OffensiveEquipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/attack/OffensiveEquipment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/characters/defense/DefensiveEquipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/defense/DefensiveEquipment.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +74,7 @@
       <workItem from="1661326314827" duration="20819000" />
       <workItem from="1661411499368" duration="274000" />
       <workItem from="1661411795562" duration="4511000" />
+      <workItem from="1661507162737" duration="8528000" />
     </task>
     <servers />
   </component>
@@ -109,7 +114,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>7</line>
+          <line>4</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>

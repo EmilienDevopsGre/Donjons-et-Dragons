@@ -1,9 +1,9 @@
 package characters.defense;
 
 public abstract class DefensiveEquipment {
-    private String type;
-    private int defenseLevel;
-    private String name;
+    protected String type;
+    protected int defenseLevel;
+    protected String name;
 
     public DefensiveEquipment(String type, int defenseLevel, String name) {
         this.type = type;
