@@ -1,7 +1,7 @@
 package characters.defense;
 
-public class Potion extends DefensiveEquipment {
-    public Potion() {
+public class Philtre extends DefensiveEquipment {
+    public Philtre() {
         super("potion", 4, "philtre");
     }
 }

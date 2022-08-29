@@ -2,7 +2,7 @@ package characters;
 import characters.attack.OffensiveEquipment;
 import characters.defense.DefensiveEquipment;
 
-public abstract class Character {
+public abstract class Player {
 
     // Attributs
     protected String name;
@@ -17,7 +17,7 @@ public abstract class Character {
 //    public Character() {
 //    }
 
-    public Character(String name, String type, int life, int force, OffensiveEquipment offensiveEquipment, DefensiveEquipment defensiveEquipment) {
+    public Player(String name, String type, int life, int force, OffensiveEquipment offensiveEquipment, DefensiveEquipment defensiveEquipment) {
         this.name = name;
         this.type = type;
         this.life = life;
@@ -36,19 +36,22 @@ public abstract class Character {
 //        this.type = type;
 //    }
 //
-//    public void setLife(int life) {
-//        this.life = life;
-//    }
+    public void setLife(int life) {
+        this.life = life;
+    }
+
+    public int getLife() {
+       return this.life;
+    }
 //
-//    public void setForce(int force) {
-//        this.force = force;
-//    }
+    public void setForce(int force) {
+        this.force = force;
+    }
 
-
-
-
-
-    // toString
+    public int getForce() {
+        return force;
+    }
+// toString
 
     @Override
     public String toString() {

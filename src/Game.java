@@ -1,4 +1,4 @@
-import characters.Character;
+import characters.Player;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -9,6 +9,7 @@ public class Game {
     // Attributs
 //    Character character;
     private int position;
+
     private boolean isOver = false;
 
 
@@ -19,8 +20,6 @@ public class Game {
     }
 
     public void nextTurn() throws OutOfBoardException {
-
-
 
         if (this.position < 64) {
             System.out.println("Je joue un tour");
@@ -42,10 +41,10 @@ public class Game {
 
     public void playGame() {
         Menu menu = new Menu();
-        Character character = menu.createCharacter();
-        menu.displayCharacter(character);
-        menu.setCharacter(character);
-        menu.displayCharacter(character);
+        Player player = menu.createCharacter();
+        menu.displayCharacter(player);
+        menu.setCharacter(player);
+        menu.displayCharacter(player);
         this.startGame();
         try {
             do {

@@ -1,4 +1,4 @@
-import characters.Character;
+import characters.Player;
 import characters.Magician;
 import characters.Warrior;
 
@@ -10,7 +10,7 @@ public class Menu {
 
     private String type = "";
 
-    public Character createCharacter() {
+    public Player createCharacter() {
         while ( !type.equals("warrior") && !type.equals("magician") ) {
             System.out.println("choisir votre personnage \n warrior \n magician");
             type = this.scanner.nextLine();
@@ -23,16 +23,16 @@ public class Menu {
         }
     }
 
-    public void displayCharacter(Character character) {
-        System.out.println(character);
+    public void displayCharacter(Player player) {
+        System.out.println(player);
     }
 
 
-    public void setCharacter(Character character) {
+    public void setCharacter(Player player) {
         Scanner newName = new Scanner(System.in);
         System.out.println("Entrer un nom pour votre personnage");
         String name = newName.nextLine();
-        character.setName(name);
+        player.setName(name);
     }
 
     public void exitProgram() {

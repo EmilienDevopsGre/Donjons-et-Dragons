@@ -1,0 +1,36 @@
+package board;
+
+import characters.Player;
+
+
+import java.lang.management.GarbageCollectorMXBean;
+import java.util.Scanner;
+
+public class Gobelin extends Enemy{
+
+    private Scanner scanner = new Scanner(System.in);
+
+    public Gobelin() {
+        super(6,
+                1);
+    }
+
+
+
+    public void fight(Player player){
+        System.out.println("Vous venez de tomber sur un gobelin, que voulez-vous faire ? [attack] [run]");
+        String value = scanner.nextLine();
+        if (value.equals("attack")) {
+            do {
+                this.life = this.life - player.getForce();
+                int playerLife = player.getLife() - this.attack;
+                player.setLife(playerLife);
+            }while (this.life > 0 || player.getLife() > 0);
+            if (playerLife < 0) {
+
+            }
+            }
+
+        }
+    }
+}
