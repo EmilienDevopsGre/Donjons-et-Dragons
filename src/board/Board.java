@@ -42,7 +42,7 @@ public class Board {
     }
 
         public void interactWith(Player player, int caseNumber){
-            board.get(caseNumber).
+//            board.get(caseNumber).
         }
 
 //        for (int i = 0; i <= size; i++) {
@@ -53,4 +53,4 @@ public class Board {
 //        }
     }
 
-}
+

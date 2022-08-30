@@ -5,13 +5,16 @@ import java.util.Scanner;
 
 public class Game {
 
-    private Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner = new Scanner(System.in);
     // Attributs
 //    Character character;
     private int position;
-
     private boolean isOver = false;
 
+    private Player player;
+
+    private Menu menu; // ????????? faut-il instancier
+    public GameState state = GameState.START;
 
     // --------------------
     // Constructeur
@@ -30,50 +33,91 @@ public class Game {
             }
             System.out.println("votre position actuelle " + this.position + "/64");
 
-        }
-        else {
+        } else {
             this.isOver = true;
-            if (this.position > 64){
+            if (this.position > 64) {
+                System.out.println("yooooooooooooooooooooooooooooooooooooooooooooo");
                 throw (new OutOfBoardException());
             }
         }
     }
 
-    public void playGame() {
-        Menu menu = new Menu();
-        Player player = menu.createCharacter();
-        menu.displayCharacter(player);
-        menu.setCharacter(player);
-        menu.displayCharacter(player);
-        this.startGame();
+    public void initGame() {
         try {
             do {
                 this.nextTurn();
             } while (!this.isOver);
             this.endGame();
-        } catch(OutOfBoardException e) {
-            e.printStackTrace();
+        } catch (OutOfBoardException e) {
+            e.printStackTrace(); // afficher l'exception
+            this.state = GameState.VICTORY;
         }
     }
 
-    public void endGame() {
+
+    public void playGame(){
+        Player player = null;
+        boolean goOn = true;
+        while (goOn) {
+            switch (this.state) {
+                case START:
+                    player = this.startGame();
+                    break;
+                case PLAY:
+                    this.initGame();
+                    break;
+                case KILLED:
+                    this.playerKilled(player.getLife());
+                    break;
+                case VICTORY:
+                    goOn = endGame();
+            }
+        }
+    }
+
+    public void playerKilled(int life) {
+        if (life <= 0) {
+            System.out.println("you have been kicked of this existence, replay [N] or exit [E]");
+            String userInput = scanner.nextLine();
+            if (userInput.equals("N")) {
+                initGame();
+            } else if (userInput.equals("E")) {
+                System.exit(0);
+            }
+
+        }
+    }
+
+    public boolean endGame() {
+
         System.out.println("you win, you can replay [N] or exit [E]");
         String userInput = scanner.nextLine();
+
         if (userInput.equals("N")) {
-            playGame();
+            this.state = GameState.START;
+            return true;
         } else if (userInput.equals("E")) {
-            System.exit(0);
+            return false;
         }
+        return false;
     }
 
-    public void startGame() {
+
+    public Player startGame() {
         isOver = false;
+        Menu menu = new Menu();
+        Player player = menu.createCharacter();
+        menu.displayCharacter(player);
+        menu.setCharacter(player);
+        menu.displayCharacter(player);
         System.out.println("Entrer S pour commencer la partie");
         String value = scanner.nextLine();
         if (value.equals("S")) {
             this.position = 1;
             System.out.println("je suis sur la case " + this.position);
         }
+        this.state = GameState.PLAY;
+        return player;
     }
 
     public int diceRoll() {
@@ -82,6 +126,9 @@ public class Game {
         System.out.println("valeur du dé " + dice);
         return dice;
     }
+
+
 }
+
 
 //function reset
