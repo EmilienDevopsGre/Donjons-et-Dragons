@@ -3,12 +3,14 @@ package board;
 import characters.Player;
 
 
+
 import java.lang.management.GarbageCollectorMXBean;
 import java.util.Scanner;
 
 public class Gobelin extends Enemy implements Fighting {
 
     private Scanner scanner = new Scanner(System.in);
+
 
     public Gobelin() {
         super(6,
