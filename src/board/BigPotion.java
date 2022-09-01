@@ -6,4 +6,11 @@ public class BigPotion extends Potion {
                 5
         );
     }
+
+    @Override
+    public String toString() {
+        return "BigPotion{" +
+                "lifeInc=" + lifeInc +
+                '}';
+    }
 }

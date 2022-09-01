@@ -1,9 +1,6 @@
 package board;
 
-import characters.attack.OffensiveEquipment;
-import characters.defense.DefensiveEquipment;
-
-public abstract class Enemy extends Case{
+public abstract class Enemy {
     // Attributs
     protected int life;
     protected int attack;

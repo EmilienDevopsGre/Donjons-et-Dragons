@@ -1,6 +1,6 @@
 package board;
 
-public abstract class Potion extends Case{
+public abstract class Potion {
     protected int lifeInc;
 
     public Potion(int lifeInc) {

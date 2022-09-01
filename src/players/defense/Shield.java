@@ -1,4 +1,4 @@
-package characters.defense;
+package players.defense;
 
 public class Shield extends DefensiveEquipment {
     public Shield() {

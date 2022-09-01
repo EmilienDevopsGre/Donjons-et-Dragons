@@ -1,4 +1,7 @@
-import characters.Player;
+import board.Board;
+import board.Case;
+import board.InteractionPlayerBoard;
+import players.Player;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -15,11 +18,14 @@ public class Game {
 
     private Menu menu; // ????????? faut-il instancier
     public GameState state = GameState.START;
+    private final Board board;
+
 
     // --------------------
     // Constructeur
-    public Game() {
+    public Game(Board board) {
 
+        this.board = board;
     }
 
     public void nextTurn() throws OutOfBoardException {
@@ -32,6 +38,9 @@ public class Game {
                 this.position = this.position + diceRoll();
             }
             System.out.println("votre position actuelle " + this.position + "/64");
+            Case boardCase = this.board.getCase(position);
+            InteractionPlayerBoard interactionPlayerBoard = boardCase.initInteract(player);
+            interactionPlayerBoard.startInteraction();
 
         } else {
             this.isOver = true;
@@ -56,7 +65,6 @@ public class Game {
 
 
     public void playGame(){
-        Player player = null;
         boolean goOn = true;
         while (goOn) {
             switch (this.state) {
@@ -122,7 +130,7 @@ public class Game {
 
     public int diceRoll() {
         Random random = new Random();
-        int dice = random.nextInt(2) + 18;
+        int dice = random.nextInt(2) + 1;
         System.out.println("valeur du dé " + dice);
         return dice;
     }

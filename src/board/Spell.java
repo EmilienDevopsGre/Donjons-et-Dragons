@@ -1,16 +1,17 @@
 package board;
 
-public class Eclairs extends Spell{
-    public Eclairs() {
-        super("spell", 2, "éclair");
+public class Spell extends Offensive{
+    public Spell(String type, int attackLevel, String name) {
+        super("spell", 0, null);
     }
 
     @Override
     public String toString() {
-        return "Eclairs{" +
+        return "Spell{" +
                 "type='" + type + '\'' +
                 ", attackLevel=" + attackLevel +
                 ", name='" + name + '\'' +
                 '}';
     }
 }
+

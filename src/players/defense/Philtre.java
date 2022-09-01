@@ -1,4 +1,4 @@
-package characters.defense;
+package players.defense;
 
 public class Philtre extends DefensiveEquipment {
     public Philtre() {

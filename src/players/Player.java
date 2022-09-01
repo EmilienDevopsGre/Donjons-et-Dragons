@@ -1,6 +1,6 @@
-package characters;
-import characters.attack.OffensiveEquipment;
-import characters.defense.DefensiveEquipment;
+package players;
+import players.attack.OffensiveEquipment;
+import players.defense.DefensiveEquipment;
 
 public abstract class Player {
 
@@ -46,6 +46,10 @@ public abstract class Player {
 //
     public void setForce(int force) {
         this.force = force;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public int getForce() {

@@ -1,7 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="DD3:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5609321-a3c9-4646-8ff0-a9b878c79621" name="Changes" comment="" />
+    <list default="true" id="a5609321-a3c9-4646-8ff0-a9b878c79621" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/board/EmptyCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/board/EnemyCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/board/InteractionPlayerBoard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/board/Offensive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/board/Spell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/board/SurpriseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/board/Weapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/board/BigPotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/board/BigPotion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/board/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/board/BoulesDeFeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/board/BoulesDeFeu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/board/Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/board/Case.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/board/Eclairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/board/Eclairs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/board/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/board/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/board/Epees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/board/Epees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/board/Gobelin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/board/Gobelin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/board/Interaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/board/Massues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/board/Massues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/board/Potion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/board/Potion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/board/StandardPotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/board/StandardPotion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/characters/Magician.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/characters/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/characters/Warrior.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/characters/attack/OffensiveEquipment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/characters/attack/Spell.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/characters/attack/Weapon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/characters/defense/DefensiveEquipment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/characters/defense/Philtre.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/characters/defense/Shield.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,7 +51,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
       </list>
@@ -22,7 +62,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2CvkbOg3KGeS9GnhYz3FdL5adYt" />
+  <component name="ProjectId" id="2Di84rCbujDlHVndUfLFAZWbjJh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -32,48 +72,57 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/Mon Drive/java/jeudunombre&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/DD3/out/artifacts/DD3_jar/DD3.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="DonjonsEtDragons" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
+    <configuration name="main.jar" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/DD3_jar/DD3.jar" />
+      <option name="WORKING_DIRECTORY" value="C:\xampp\htdocs\DD3" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="DD3:jar" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JAR Application.main.jar" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a5609321-a3c9-4646-8ff0-a9b878c79621" name="Changes" comment="" />
-      <created>1659690518930</created>
+      <changelist id="285d7871-2091-485d-b80a-254df6f2aadf" name="Changes" comment="" />
+      <created>1661170356871</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1659690518930</updated>
-      <workItem from="1659690520325" duration="5492000" />
-      <workItem from="1661153348407" duration="9046000" />
-      <workItem from="1661238979097" duration="16284000" />
-      <workItem from="1661326314827" duration="20819000" />
-      <workItem from="1661411499368" duration="274000" />
-      <workItem from="1661411795562" duration="4511000" />
-      <workItem from="1661507162737" duration="9177000" />
-      <workItem from="1661756765959" duration="20634000" />
-      <workItem from="1661842947731" duration="13848000" />
-      <workItem from="1661929573026" duration="7381000" />
+      <updated>1661170356871</updated>
+      <workItem from="1661170358159" duration="5470000" />
+      <workItem from="1661238949238" duration="14941000" />
+      <workItem from="1661327245609" duration="15822000" />
+      <workItem from="1661411203073" duration="16285000" />
+      <workItem from="1661498200192" duration="11288000" />
+      <workItem from="1661756787926" duration="20052000" />
+      <workItem from="1661843210579" duration="13011000" />
+      <workItem from="1661929376837" duration="16390000" />
+      <workItem from="1662016090349" duration="4541000" />
     </task>
     <servers />
   </component>
@@ -85,41 +134,10 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="CUSTOM_BOOLEAN_PROPERTIES">
-                <map>
-                  <entry key="Show.Git.Branches" value="true" />
-                </map>
-              </option>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="heritage" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.StackOverflowError" package="java.lang" />
-          <option name="timeStamp" value="12" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>

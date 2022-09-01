@@ -1,4 +1,4 @@
-package characters.defense;
+package players.defense;
 
 public abstract class DefensiveEquipment {
     protected String type;

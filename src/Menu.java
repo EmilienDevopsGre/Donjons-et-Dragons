@@ -1,6 +1,6 @@
-import characters.Player;
-import characters.Magician;
-import characters.Warrior;
+import players.Player;
+import players.Magician;
+import players.Warrior;
 
 import java.util.Scanner;
 

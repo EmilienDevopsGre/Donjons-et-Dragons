@@ -1,7 +1,7 @@
-package characters;
+package players;
 
-import characters.attack.Spell;
-import characters.defense.Philtre;
+import players.attack.Spell;
+import players.defense.Philtre;
 
 public class Magician extends Player {
     public Magician() {

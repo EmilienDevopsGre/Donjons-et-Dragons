@@ -1,21 +1,9 @@
-package characters.attack;
+package players.attack;
 
 public abstract class OffensiveEquipment {
     protected String type;
     protected int attackLevel;
     protected String name;
-
-//    public abstract characters.attack.OffensiveEquipment(String type, String name) {
-//        if (type == "weapon") {
-//            this.attackLevel = 5;
-//        }
-//        else {
-//            this.attackLevel = 7;
-//        }
-//        this.type = type;
-//        this.name = name;
-//    }
-
 
     public OffensiveEquipment(String type, int attackLevel, String name) {
         this.type = type;

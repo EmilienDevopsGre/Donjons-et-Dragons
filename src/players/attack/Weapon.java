@@ -1,4 +1,4 @@
-package characters.attack;
+package players.attack;
 
 public class Weapon extends OffensiveEquipment {
     public Weapon() {

@@ -1,7 +1,7 @@
-package characters;
+package players;
 
-import characters.attack.Weapon;
-import characters.defense.Shield;
+import players.attack.Weapon;
+import players.defense.Shield;
 
 public class Warrior extends Player {
     public Warrior() {
