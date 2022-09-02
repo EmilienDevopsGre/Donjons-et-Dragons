@@ -4,8 +4,7 @@ import players.Player;
 
 public class EmptyCase extends Case{
 
-
-    //    public void jump(){
+//        public void jump(){
 //        System.out.println("nothing here, roll the dice");
 //    }
 

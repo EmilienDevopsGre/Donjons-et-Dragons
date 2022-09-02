@@ -1,3 +1,5 @@
+package mainStuff;
+
 import players.Player;
 import players.Magician;
 import players.Warrior;

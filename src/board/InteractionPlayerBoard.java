@@ -5,4 +5,5 @@ public interface InteractionPlayerBoard {
 
     void startInteraction();
 
+
 }

@@ -1,3 +1,5 @@
+package mainStuff;
+
 import board.Board;
 
 public class Main {
@@ -5,6 +7,7 @@ public class Main {
 
         Board board = new Board();
         board.initBoard();
+//        board.getCasesArray();
         Game game = new Game(board);
         game.playGame();
     }

@@ -1,3 +1,5 @@
+package mainStuff;
+
 import board.Board;
 import board.Case;
 import board.InteractionPlayerBoard;
@@ -39,7 +41,7 @@ public class Game {
             }
             System.out.println("votre position actuelle " + this.position + "/64");
             Case boardCase = this.board.getCase(position);
-            InteractionPlayerBoard interactionPlayerBoard = boardCase.initInteract(player);
+            InteractionPlayerBoard interactionPlayerBoard = boardCase.initInteract(player, this);
             interactionPlayerBoard.startInteraction();
 
         } else {
@@ -64,7 +66,7 @@ public class Game {
     }
 
 
-    public void playGame(){
+    public void playGame() {
         boolean goOn = true;
         while (goOn) {
             switch (this.state) {
@@ -75,7 +77,7 @@ public class Game {
                     this.initGame();
                     break;
                 case KILLED:
-                    this.playerKilled(player.getLife());
+                    this.playerKilled();
                     break;
                 case VICTORY:
                     goOn = endGame();
@@ -83,18 +85,16 @@ public class Game {
         }
     }
 
-    public void playerKilled(int life) {
-        if (life <= 0) {
-            System.out.println("you have been kicked of this existence, replay [N] or exit [E]");
-            String userInput = scanner.nextLine();
-            if (userInput.equals("N")) {
-                initGame();
-            } else if (userInput.equals("E")) {
-                System.exit(0);
-            }
-
+    public void playerKilled() {
+        System.out.println("you have been kicked of this existence, replay [N] or exit [E]");
+        String userInput = scanner.nextLine();
+        if (userInput.equals("N")) {
+            this.state = GameState.START;;
+        } else if (userInput.equals("E")) {
+            System.exit(0);
         }
     }
+
 
     public boolean endGame() {
 

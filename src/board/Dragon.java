@@ -2,7 +2,8 @@ package board;
 
 public class Dragon extends Enemy {
     public Dragon() {
-        super(15,
+        super("Dragon",
+                15,
                 4);
     }
 }

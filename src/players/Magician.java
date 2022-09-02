@@ -7,8 +7,8 @@ public class Magician extends Player {
     public Magician() {
         super("magician",
                 "magician",
-                6,
-                15,
+                3,
+                8,
                 new Spell(),
                 new Philtre()
         );

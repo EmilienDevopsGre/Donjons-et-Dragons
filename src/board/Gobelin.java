@@ -11,7 +11,8 @@ public class Gobelin extends Enemy implements Fighting {
 
 
     public Gobelin() {
-        super(6,
+        super("Gobelin",
+                6,
                 1);
     }
 

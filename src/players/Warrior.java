@@ -7,8 +7,8 @@ public class Warrior extends Player {
     public Warrior() {
         super("warrior",
                 "warrior",
-                10,
-                10,
+                5,
+                5,
                 new Weapon(),
                 new Shield());
     }
