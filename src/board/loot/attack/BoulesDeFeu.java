@@ -1,6 +1,4 @@
-package board;
-
-import players.attack.Weapon;
+package board.loot.attack;
 
 public class BoulesDeFeu extends Spell {
     public BoulesDeFeu() { super("spell", 7, "boule de feu");

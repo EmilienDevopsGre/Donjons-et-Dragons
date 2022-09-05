@@ -1,4 +1,4 @@
-package board;
+package board.mainBoard;
 @FunctionalInterface
 public interface InteractionPlayerBoard {
 // method

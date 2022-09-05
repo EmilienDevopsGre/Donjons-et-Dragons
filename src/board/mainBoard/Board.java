@@ -1,5 +1,15 @@
-package board;
+package board.mainBoard;
 
+import board.enemies.Dragon;
+import board.enemies.EnemyCase;
+import board.enemies.Gobelin;
+import board.enemies.Sorcier;
+import board.loot.SurpriseCase;
+import board.loot.attack.BoulesDeFeu;
+import board.loot.attack.Eclairs;
+import board.loot.attack.Epees;
+import board.loot.potion.BigPotion;
+import board.loot.potion.StandardPotion;
 import players.Player;
 
 import java.util.ArrayList;
@@ -7,7 +17,7 @@ import java.util.Random;
 
 
 public class Board {
-    private ArrayList<Case> cases = new ArrayList<Case>();
+    private ArrayList<InteractionPlayerBoard> cases = new ArrayList<>();
     private int size = 64;
 
     int c;
@@ -85,12 +95,12 @@ public class Board {
     public Case[] getCasesArray() {
 //        int[] casesArray = cases.get(5);
 //        Case[] caseArray = new Case[cases.size()];
-        Case caseArray[] = new Case [cases.size()];
+        Case caseArray[] = new Case[cases.size()];
 //        Case[]caseArray = cases.toArray(new Case[0]);
         for (int i = 0; i < cases.size(); i++) {
 //        for (Case i : caseArray)
 //            push(int[] caseArray, cases.get(i));
-            caseArray[i]= cases.get(i);
+            caseArray[i] = cases.get(i);
         }
         System.out.println(caseArray);
 //        System.out.println(caseArray + "youhouuuuuuuuuuuuuu");
@@ -100,6 +110,7 @@ public class Board {
         return caseArray;
 
     }
+
 
     public void interactWith(Player player, int caseNumber) {
 //            board.get(caseNumber).
@@ -111,6 +122,16 @@ public class Board {
 //            board.add(new Gobelin());
 //
 //        }
+
+
+// getters setters
+
+
+    public ArrayList<Case> getCases() {
+        return cases;
+    }
+
+    public void setCases(Case slot, int i) {
+        this.cases.set(i, slot);
+    }
 }
-
-

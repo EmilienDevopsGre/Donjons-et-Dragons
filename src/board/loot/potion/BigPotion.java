@@ -1,8 +1,8 @@
-package board;
+package board.loot.potion;
 
 public class BigPotion extends Potion {
     public BigPotion(){
-        super(
+        super("Big Potion",
                 5
         );
     }

@@ -1,8 +1,8 @@
 package mainStuff;
 
-import board.Board;
-import board.Case;
-import board.InteractionPlayerBoard;
+import board.mainBoard.Board;
+import board.mainBoard.Case;
+import board.mainBoard.InteractionPlayerBoard;
 import players.Player;
 
 import java.util.Random;
@@ -12,7 +12,6 @@ public class Game {
 
     private final Scanner scanner = new Scanner(System.in);
     // Attributs
-//    Character character;
     private int position;
     private boolean isOver = false;
 
@@ -70,17 +69,10 @@ public class Game {
         boolean goOn = true;
         while (goOn) {
             switch (this.state) {
-                case START:
-                    player = this.startGame();
-                    break;
-                case PLAY:
-                    this.initGame();
-                    break;
-                case KILLED:
-                    this.playerKilled();
-                    break;
-                case VICTORY:
-                    goOn = endGame();
+                case START -> player = this.startGame();
+                case PLAY -> this.initGame();
+                case KILLED -> this.playerKilled();
+                case VICTORY -> goOn = endGame();
             }
         }
     }
@@ -136,6 +128,13 @@ public class Game {
     }
 
 
+    public Board getBoard() {
+        return board;
+    }
+
+    public int getPosition() {
+        return position;
+    }
 }
 
 

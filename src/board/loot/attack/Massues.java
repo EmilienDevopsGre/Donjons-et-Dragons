@@ -1,13 +1,13 @@
-package board;
+package board.loot.attack;
 
-public class Eclairs extends Spell{
-    public Eclairs() {
-        super("spell", 2, "éclair");
+public class Massues extends Weapon{
+    public Massues() {
+        super("weapon", 3, "massue");
     }
 
     @Override
     public String toString() {
-        return "Eclairs{" +
+        return "Massues{" +
                 "type='" + type + '\'' +
                 ", attackLevel=" + attackLevel +
                 ", name='" + name + '\'' +

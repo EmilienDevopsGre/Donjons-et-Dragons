@@ -1,6 +1,4 @@
-package board;
-
-import players.Player;
+package board.mainBoard;
 
 public class EmptyCase extends Case{
 
@@ -16,4 +14,9 @@ public class EmptyCase extends Case{
 //        System.out.println("je fais rien");
 //    }
 
+
+    @Override
+    public String toString() {
+        return "Je suis une case vide";
+    }
 }

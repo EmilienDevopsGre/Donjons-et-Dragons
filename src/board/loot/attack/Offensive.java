@@ -1,11 +1,14 @@
-package board;
+package board.loot.attack;
 
-public class Offensive {
+import board.loot.Loot;
+
+public class Offensive extends Loot {
     protected String type;
     protected int attackLevel;
     protected String name;
 
     public Offensive(String type, int attackLevel, String name) {
+        super(name);
         this.type = type;
         this.attackLevel = attackLevel;
         this.name = name;

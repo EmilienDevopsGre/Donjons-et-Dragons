@@ -1,4 +1,4 @@
-package board;
+package board.enemies;
 
 public abstract class Enemy {
     // Attributs

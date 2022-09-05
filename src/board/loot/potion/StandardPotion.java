@@ -1,8 +1,8 @@
-package board;
+package board.loot.potion;
 
 public class StandardPotion extends Potion{
     public StandardPotion(){
-        super(
+        super("Standard Potion",
                 2
         );
     }

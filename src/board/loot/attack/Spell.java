@@ -1,16 +1,17 @@
-package board;
+package board.loot.attack;
 
-public class Epees extends Weapon {
-    public Epees() {
-        super("weapon", 5, "épée");
+public class Spell extends Offensive {
+    public Spell(String type, int attackLevel, String name) {
+        super("spell", 0, null);
     }
 
     @Override
     public String toString() {
-        return "Epees{" +
+        return "Spell{" +
                 "type='" + type + '\'' +
                 ", attackLevel=" + attackLevel +
                 ", name='" + name + '\'' +
                 '}';
     }
 }
+
