@@ -16,16 +16,15 @@ public class Game {
 
     private Player player;
 
-    private Menu menu; // ????????? faut-il instancier
+    private Menu menu = new Menu();
     public GameState state = GameState.START;
-    private final Board board;
+    private final Board board = new Board(this.player);
 
 
     // --------------------
     // Constructeur
-    public Game(Board board) {
+    public Game() {
 
-        this.board = board;
     }
 
     public void nextTurn() throws OutOfBoardException {
@@ -38,7 +37,7 @@ public class Game {
                 this.position = this.position + diceRoll();
             }
             System.out.println("votre position actuelle " + this.position + "/64");
-            InteractionPlayerBoard boardCase = this.board.getCase(position);
+            InteractionPlayerBoard boardCase = this.board.getCase(this.position);
             boardCase.startInteraction(player);
 
         } else {
@@ -103,7 +102,10 @@ public class Game {
 
     public Player startGame() {
         isOver = false;
-        Menu menu = new Menu();
+        this.player = menu.createCharacter();
+        Board board = new Board(player);
+        board.initBoard();
+        board.show();
         menu.displayCharacter(player);
         menu.setCharacter(player);
         menu.displayCharacter(player);

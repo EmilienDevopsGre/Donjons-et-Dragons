@@ -5,17 +5,9 @@ import mainStuff.OutOfBoardException;
 import players.Player;
 
 public class Main {
-    public static void main(String[] args) throws OutOfBoardException {
+    public static void main(String[] args){
 
-
-
-        Menu menu = new Menu();
-        Player player = menu.createCharacter();
-        Board board = new Board(player);
-        board.initBoard();
-        board.show();
-//        board.getCasesArray();
-        Game game = new Game(board);
+        Game game = new Game();
         game.playGame();
     }
 }
