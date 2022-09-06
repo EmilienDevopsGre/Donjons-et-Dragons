@@ -1,8 +1,14 @@
 package board.mainBoard;
 
-public class EmptyCase extends Case{
+import players.Player;
 
-//        public void jump(){
+public class EmptyCase implements InteractionPlayerBoard {
+    @Override
+    public void startInteraction(Player player) {
+
+    }
+
+    //        public void jump(){
 //        System.out.println("nothing here, roll the dice");
 //    }
 

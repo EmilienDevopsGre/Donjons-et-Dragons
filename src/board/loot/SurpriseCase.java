@@ -2,20 +2,19 @@ package board.loot;
 
 import board.loot.attack.Offensive;
 import board.loot.potion.Potion;
-import board.mainBoard.Case;
-import mainStuff.Game;
+import board.mainBoard.InteractionPlayerBoard;
 import players.Player;
 
 import java.util.Scanner;
 
-public class SurpriseCase extends Case {
+public class SurpriseCase implements InteractionPlayerBoard {
 
     protected Loot loot;
     protected Potion potion;
     protected Offensive offensive;
 
     private final Scanner scanner = new Scanner(System.in);
-    String value = scanner.nextLine();
+//    String value = scanner.nextLine();
 
     // Constructeurs
 
@@ -27,6 +26,11 @@ public class SurpriseCase extends Case {
         this.offensive = offensive;
     }
     public SurpriseCase() {
+    }
+
+    @Override
+    public void startInteraction(Player player) {
+
     }
 
     // Méthodes

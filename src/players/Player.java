@@ -25,6 +25,10 @@ public abstract class Player {
         this.offensiveEquipment = offensiveEquipment;
         this.defensiveEquipment = defensiveEquipment;
     }
+
+    public Player() {
+
+    }
 //
     // Getters Setters
 

@@ -1,7 +1,6 @@
 package mainStuff;
 
 import board.mainBoard.Board;
-import board.mainBoard.Case;
 import board.mainBoard.InteractionPlayerBoard;
 import players.Player;
 
@@ -39,9 +38,8 @@ public class Game {
                 this.position = this.position + diceRoll();
             }
             System.out.println("votre position actuelle " + this.position + "/64");
-            Case boardCase = this.board.getCase(position);
-            InteractionPlayerBoard interactionPlayerBoard = boardCase.initInteract(player, this);
-            interactionPlayerBoard.startInteraction();
+            InteractionPlayerBoard boardCase = this.board.getCase(position);
+            boardCase.startInteraction(player);
 
         } else {
             this.isOver = true;
@@ -106,7 +104,6 @@ public class Game {
     public Player startGame() {
         isOver = false;
         Menu menu = new Menu();
-        Player player = menu.createCharacter();
         menu.displayCharacter(player);
         menu.setCharacter(player);
         menu.displayCharacter(player);

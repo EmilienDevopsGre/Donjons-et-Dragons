@@ -1,15 +1,28 @@
-import board.enemies.EnemyCase;
-import board.enemies.Gobelin;
 import board.mainBoard.Board;
-import board.mainBoard.Case;
-import board.mainBoard.EmptyCase;
 import mainStuff.Game;
+import mainStuff.Menu;
 import mainStuff.OutOfBoardException;
-
-import java.util.ArrayList;
+import players.Player;
 
 public class Main {
     public static void main(String[] args) throws OutOfBoardException {
+
+
+
+        Menu menu = new Menu();
+        Player player = menu.createCharacter();
+        Board board = new Board(player);
+        board.initBoard();
+        board.show();
+//        board.getCasesArray();
+        Game game = new Game(board);
+        game.playGame();
+    }
+}
+
+
+
+
 
 
 //        ArrayList<Case> board = new ArrayList<>();
@@ -37,11 +50,3 @@ public class Main {
 //        for (int i = 0; i < board.size(); i++) {
 //            System.out.println(i + " " + board.get(i).toString());
 //        }
-
-        Board board = new Board();
-        board.initBoard();
-//        board.getCasesArray();
-        Game game = new Game(board);
-        game.playGame();
-    }
-}
