@@ -10,22 +10,14 @@ import java.util.Scanner;
 public class SurpriseCase implements InteractionPlayerBoard {
 
     protected Loot loot;
-    protected Potion potion;
-    protected Offensive offensive;
 
     private final Scanner scanner = new Scanner(System.in);
 //    String value = scanner.nextLine();
 
-    // Constructeurs
+    // Constructeur
 
-    public SurpriseCase(Potion potion) {
-        this.potion = potion;
-    }
-
-    public SurpriseCase(Offensive offensive) {
-        this.offensive = offensive;
-    }
-    public SurpriseCase() {
+    public SurpriseCase(Loot loot) {
+        this.loot = loot;
     }
 
     @Override
@@ -51,4 +43,9 @@ public class SurpriseCase implements InteractionPlayerBoard {
 //    public void drinkPotion(Player player, Game game){
 //        System.out.println("vous buvez la potion et gagnez");
 //    }
+
+    @Override
+    public String toString() {
+        return loot.toString();
+    }
 }

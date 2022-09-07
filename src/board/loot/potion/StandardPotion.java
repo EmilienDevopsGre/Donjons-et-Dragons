@@ -9,8 +9,6 @@ public class StandardPotion extends Potion{
 
     @Override
     public String toString() {
-        return "StandardPotion{" +
-                "lifeInc=" + lifeInc +
-                '}';
+        return "StandardPotion";
     }
 }

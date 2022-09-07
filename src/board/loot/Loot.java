@@ -7,5 +7,12 @@ public abstract class Loot  {
     public Loot(String name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return "Loot{" +
+                "name='" + name + '\'' +
+                '}';
+    }
 }
 

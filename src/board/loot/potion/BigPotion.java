@@ -9,8 +9,6 @@ public class BigPotion extends Potion {
 
     @Override
     public String toString() {
-        return "BigPotion{" +
-                "lifeInc=" + lifeInc +
-                '}';
+        return "BigPotion";
     }
 }

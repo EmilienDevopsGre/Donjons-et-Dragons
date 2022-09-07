@@ -103,7 +103,7 @@ public class Game {
     public Player startGame() {
         isOver = false;
         this.player = menu.createCharacter();
-        Board board = new Board(player);
+//        Board board = new Board(player);
         board.initBoard();
         board.show();
         menu.displayCharacter(player);

@@ -25,6 +25,9 @@ public class Board {
         this.player = player;
     }
     public void initBoard() {
+        if (cases.size() > 0){
+            cases.clear();
+        }
         for (int i = 0; i < size; i++) {
             switch (i) {
                 case 3, 6, 9, 12, 15, 18, 21, 24, 27, 30 -> cases.add(new EnemyCase(new Gobelin()));

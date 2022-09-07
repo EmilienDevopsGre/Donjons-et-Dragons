@@ -1,20 +1,25 @@
 package board.enemies;
 
-import board.mainBoard.Fighting;
+import board.mainBoard.InteractionPlayerBoard;
 
-public class Dragon extends Enemy implements Fighting {
+/**
+ * @author emilienmace
+ * La classe Dragon est une classe enfant de la classe abstraite enemy
+ */
+public class Dragon extends Enemy {
+    /**
+     * constructeur de la classe Dragon sans paramètres
+     */
     public Dragon() {
         super("Dragon",
                 15,
                 4);
     }
 
-    @Override
-    public void fight(int life, int attack) {
-        Fighting.super.fight(life, attack);
-    }
 
-
+    /**
+     * @return toString avec le texte "un dragon"
+     */
     @Override
     public String toString() {
         return "un dragon";

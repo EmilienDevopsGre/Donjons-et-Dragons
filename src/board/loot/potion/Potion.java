@@ -12,4 +12,5 @@ public abstract class Potion extends Loot {
         super(name);
         this.lifeInc = lifeInc;
     }
+
 }

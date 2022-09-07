@@ -1,29 +1,27 @@
 package board.enemies;
 
-import board.mainBoard.Fighting;
-import mainStuff.Game;
-import mainStuff.GameState;
-import players.Player;
+import board.mainBoard.InteractionPlayerBoard;
+
+/**
+ * @author emilienmace
+ * La classe Gobelin est une classe enfant de la classe abstraite enemy
+ */
+public class Gobelin extends Enemy{
 
 
-import java.util.Scanner;
-
-public class Gobelin extends Enemy implements Fighting {
-
-
-
-
+    /**
+     * constructeur de la classe Gobelin sans paramètres
+     */
     public Gobelin() {
         super("Gobelin",
                 6,
                 1);
     }
 
-    @Override
-    public void fight(int life, int attack) {
-        Fighting.super.fight(life, attack);
-    }
 
+    /**
+     * @return toString avec le texte "un gobelin"
+     */
     @Override
     public String toString() {
         return "un gobelin";

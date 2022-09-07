@@ -1,20 +1,23 @@
 package board.enemies;
 
-import board.mainBoard.Fighting;
-
-public class Sorcier extends Enemy implements Fighting{
+/**
+ * @author emilienmace
+ * La classe Sorcier est une classe enfant de la classe abstraite enemy
+ */
+public class Sorcier extends Enemy{
+    /**
+     * constructeur de la classe Sorcier sans paramètres
+     */
     public Sorcier() {
         super("Sorcier",
                 9,
                 2);
     }
 
-    @Override
-    public void fight(int life, int attack) {
-        Fighting.super.fight(life, attack);
-    }
 
-
+    /**
+     * @return toString avec le texte "un sorcier"
+     */
     @Override
     public String toString() {
         return "un sorcier";

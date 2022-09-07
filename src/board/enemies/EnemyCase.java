@@ -10,16 +10,35 @@ import players.Player;
 import java.util.Scanner;
 
 
+/**
+ * @author emilienmace
+ * classe enemyCase qui implémente l'interface InteractionPlayerBoard
+ */
 public class EnemyCase implements InteractionPlayerBoard {
+    /**
+     * attribut objet de la classe Enemy
+     */
     private final Enemy enemy;
+    /**
+     * attribut objet de la classe java Scanner
+     */
     private final Scanner scanner = new Scanner(System.in);
 
 
+    /**
+     * constructeur de la classe EnemyCase avec un paramètre
+     * @param enemy
+     */
     public EnemyCase(Enemy enemy) {
 
         this.enemy = enemy;
     }
 
+    /**
+     * méthode issue de l'interface InteractionPlayerBoard avec un paramètre
+     * elle permet de décider du lancement du combat ou non
+     * @param player
+     */
     @Override
     public void startInteraction(Player player) {
         System.out.println("vous rencontrez " + this.enemy.toString() + ", combattez [F] ou fuyez [L]");
@@ -33,6 +52,11 @@ public class EnemyCase implements InteractionPlayerBoard {
         }
     }
 
+    /**
+     * méthode fight de type void avec un paramètre
+     * elle permet d'exécuter le combat entre le player et l'enemy se trouvant sur la case
+     * @param player
+     */
     public void fight(Player player) {
         do {
 //        return () ->  System.out.println("combat entre" + player.getName() + " et " + this.enemy);
@@ -64,6 +88,9 @@ public class EnemyCase implements InteractionPlayerBoard {
         while (player.getLife() > 0 && this.enemy.life > 0);
     }
 
+    /**
+     * @return un String de l'objet enemy
+     */
     @Override
     public String toString() {
         return enemy.toString();
