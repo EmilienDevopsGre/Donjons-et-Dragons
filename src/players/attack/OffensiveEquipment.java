@@ -5,6 +5,10 @@ public abstract class OffensiveEquipment {
     protected int attackLevel;
     protected String name;
 
+    public String getType() {
+        return type;
+    }
+
     public OffensiveEquipment(String type, int attackLevel, String name) {
         this.type = type;
         this.attackLevel = attackLevel;

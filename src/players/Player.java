@@ -5,9 +5,11 @@ import players.defense.DefensiveEquipment;
 public abstract class Player {
 
     // Attributs
+
     protected String name;
     protected String type;
     protected int life;
+    protected int id = 0;
     protected int force;
     protected OffensiveEquipment offensiveEquipment;
     protected DefensiveEquipment defensiveEquipment;
@@ -17,7 +19,8 @@ public abstract class Player {
 //    public Character() {
 //    }
 
-    public Player(String name, String type, int life, int force, OffensiveEquipment offensiveEquipment, DefensiveEquipment defensiveEquipment) {
+    public Player(int id, String name, String type, int life, int force, OffensiveEquipment offensiveEquipment, DefensiveEquipment defensiveEquipment) {
+        this.id = id;
         this.name = name;
         this.type = type;
         this.life = life;
@@ -59,7 +62,24 @@ public abstract class Player {
     public int getForce() {
         return force;
     }
-// toString
+
+    public String getType() {
+        return type;
+    }
+
+    public OffensiveEquipment getOffensiveEquipment() {
+        return offensiveEquipment;
+    }
+
+    public DefensiveEquipment getDefensiveEquipment() {
+        return defensiveEquipment;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    // toString
 
     @Override
     public String toString() {
@@ -72,6 +92,7 @@ public abstract class Player {
                 ", defensiveEquipment=" + defensiveEquipment +
                 '}';
     }
+
 
 
 }

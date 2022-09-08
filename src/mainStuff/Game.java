@@ -2,6 +2,7 @@ package mainStuff;
 
 import board.mainBoard.Board;
 import board.mainBoard.InteractionPlayerBoard;
+import com.example.Application;
 import players.Player;
 
 import java.util.Random;
@@ -106,6 +107,15 @@ public class Game {
     public Player startGame() {
         isOver = false;
         this.player = menu.createCharacter();
+        System.out.println("sauvegarde du joueur");
+        Application application = new Application();
+        application.insertHero(player);
+        application.insertHero(player);
+        System.out.println(application.selectHero());
+        player.setName("bobob");
+        application.updateHero(player);
+        System.out.println(application.selectHero());
+
 //        Board board = new Board(player);
         board.initBoard();
         board.show();
