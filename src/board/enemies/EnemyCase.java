@@ -79,7 +79,7 @@ public class EnemyCase implements InteractionPlayerBoard {
         }
         if (player.getLife() <= 0) {
             System.out.println("vous avez perdu");
-//            game.playerKilled();
+//
         }
 
         System.out.println("vie du joueur : " + player.getLife() + " vie du " + this.enemy.name + " : " + this.enemy.life);

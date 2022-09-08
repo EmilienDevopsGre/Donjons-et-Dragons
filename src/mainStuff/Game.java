@@ -39,7 +39,7 @@ public class Game {
             System.out.println("votre position actuelle " + this.position + "/64");
             InteractionPlayerBoard boardCase = this.board.getCase(this.position);
             boardCase.startInteraction(player);
-
+            playerKilled();
         } else {
             this.isOver = true;
             if (this.position > 64) {
@@ -75,12 +75,15 @@ public class Game {
     }
 
     public void playerKilled() {
-        System.out.println("you have been kicked of this existence, replay [N] or exit [E]");
-        String userInput = scanner.nextLine();
-        if (userInput.equals("N")) {
-            this.state = GameState.START;;
-        } else if (userInput.equals("E")) {
-            System.exit(0);
+        if(player.getLife()<=0) {
+            System.out.println("you have been kicked of this existence, replay [N] or exit [E]");
+            String userInput = scanner.nextLine();
+            if (userInput.equals("N")) {
+                startGame();
+
+            } else if (userInput.equals("E")) {
+                System.exit(0);
+            }
         }
     }
 
@@ -91,7 +94,7 @@ public class Game {
         String userInput = scanner.nextLine();
 
         if (userInput.equals("N")) {
-            this.state = GameState.START;
+            this.startGame();
             return true;
         } else if (userInput.equals("E")) {
             return false;
