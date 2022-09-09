@@ -5,6 +5,7 @@ import board.mainBoard.InteractionPlayerBoard;
 import com.example.Application;
 import players.Player;
 
+import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -44,7 +45,7 @@ public class Game {
         } else {
             this.isOver = true;
             if (this.position > 64) {
-                System.out.println("yooooooooooooooooooooooooooooooooooooooooooooo");
+                System.out.println("après la case 64");
                 throw (new OutOfBoardException());
             }
         }
@@ -111,10 +112,15 @@ public class Game {
         Application application = new Application();
         application.insertHero(player);
         application.insertHero(player);
+        System.out.println("------------------");
         System.out.println(application.selectHero());
-        player.setName("bobob");
+        List<Player> players=application.selectHero();
+        player=players.get(players.size()-1);
+        System.out.println(player);
+        player.setName("fggfggffggf");
         application.updateHero(player);
         System.out.println(application.selectHero());
+        application.deleteHero(players.get(players.size()-2));
 
 //        Board board = new Board(player);
         board.initBoard();

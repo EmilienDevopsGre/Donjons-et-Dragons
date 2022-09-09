@@ -34,6 +34,7 @@ public class Application {
     }
 
     public void insertHero(Player player) {
+        System.out.println("insert");
         try {
             openDatabaseConnection();
 
@@ -56,11 +57,12 @@ public class Application {
 
 
     public void updateHero(Player player) {
+        System.out.println("update");
         try {
             openDatabaseConnection();
 
             PreparedStatement preparedStatement = connection.prepareStatement("UPDATE " +
-                    "hero SET type = ?, nom = ?, niveau_vie = ?, niveau_force ?, arme_ou_sort ?, bouclier ? " +
+                    "hero SET type = ?, nom = ?, niveau_vie = ?, niveau_force = ?, arme_ou_sort = ?, bouclier = ? " +
                     "WHERE id = ? ");
 
             preparedStatement.setString(1, player.getType());
@@ -78,6 +80,7 @@ public class Application {
     }
 
     public void deleteHero(Player player) {
+        System.out.println("delete");
         try {
             openDatabaseConnection();
 
@@ -92,6 +95,7 @@ public class Application {
     }
 
     public List<Player> selectHero() {
+        System.out.println("select");
         List<Player> players = new ArrayList<>();
         try {
             openDatabaseConnection();
